@@ -1,0 +1,23 @@
+// prettier-ignore
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",    
+  "compilerOptions": {
+    "skipLibCheck": true,  
+    "baseUrl": ".",
+    "paths": {
+      "_": ["src/*"],
+      "_navigation/*": [
+        "src/navigation/*/index",
+        "src/navigation/*",
+        "src/navigation/index"
+      ],
+      "_screens/*": [
+        "src/screens/*/index",
+        "src/screens/*",
+        "src/screens/index"
+      ],
+    }                     
+  },
+  "include": ["next-env.d.ts", "./src/**/*", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
+}
