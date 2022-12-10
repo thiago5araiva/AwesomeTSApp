@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:206359364731:android:c364b6fa7fdbf609a20ede",
         "android_client_info": {
-          "package_name": "com.Me.AwesomeApp"
+          "package_name": "com.awesometsapp"
         }
       },
       "oauth_client": [
@@ -34,7 +34,7 @@
               "client_id": "206359364731-3gpp8rhkhjhe83c39do6phb4b7922o1e.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.Me.AwersomeApp"
+                "bundle_id": "com.awesometsapp"
               }
             }
           ]
