@@ -6,7 +6,7 @@ const HomeScreen = () => {
   const { user, initializing } = useHomeScreen();
   return (
     <SafeAreaView>
-      <Text>Home.</Text>
+      <Text>Home</Text>
     </SafeAreaView>
   );
 };

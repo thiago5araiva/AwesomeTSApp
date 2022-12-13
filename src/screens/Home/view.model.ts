@@ -1,6 +1,6 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import Firebase from '@react-native-firebase/app';
-import auth, {FirebaseAuthTypes} from '@react-native-firebase/auth';
+import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
 type TUser = FirebaseAuthTypes.User | null;
 type TUseHomeScreen = {
   initializing: boolean;
@@ -19,10 +19,10 @@ const useHomeScreen = (): TUseHomeScreen => {
 
   useEffect(() => {
     const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
-    return subscriber; // unsubscribe on unmount
+    return subscriber;
   }, []);
 
-  return {initializing, user};
+  return { initializing, user };
 };
 
 export default useHomeScreen;
