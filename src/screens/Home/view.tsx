@@ -1,8 +1,9 @@
-import {useState} from 'react';
-import {Text, SafeAreaView} from 'react-native';
-import {} from 'react-native-safe-area-context';
+import { Text, SafeAreaView } from 'react-native';
+
+import useHomeScreen from './view.model';
 
 const HomeScreen = () => {
+  const { user, initializing } = useHomeScreen();
   return (
     <SafeAreaView>
       <Text>Home</Text>

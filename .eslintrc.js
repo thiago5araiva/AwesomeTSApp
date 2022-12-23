@@ -6,15 +6,15 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      rules: {
-        '@typescript-eslint/no-shadow': ['error'],
-        'no-shadow': 'off',
-        'no-undef': 'off',
-      },
     },
   ],
   rules: {
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-shadow': ['warn'],
+    '@typescript-eslint/no-unused-vars': ['warn'],
+    'react-hooks/rules-of-hooks': ['warn'],
+
+    'no-shadow': 'off',
+    'no-undef': 'off',
+    'no-unused-vars': 'on',
   },
 };
